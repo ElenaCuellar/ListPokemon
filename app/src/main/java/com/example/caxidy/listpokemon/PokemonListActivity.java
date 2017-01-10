@@ -1,5 +1,7 @@
 /*-Cambiar el campo de la url al objeto BLOB.
--Cambiar lo necesario de layouts y clases para que los campos de mi tabla coincidan con las vistas de detalle y etc.
+-Cambiar lo necesario de layouts y clases para que los campos de mi tabla coincidan con las vistas de detalle y etc:
+posiblemente, el layout a modificar es pokemon_detail, a los que hay que añadir un imageview o algo
+asi. Ademas de modificar algo en la clase PokemonDetailFragment.
 -pDialog...buscar alguna forma de acceder al contexto del objeto PokemonListActivity actual o quitar pDialog.
 */
 

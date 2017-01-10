@@ -61,6 +61,7 @@ public class PokemonDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
+            //!!añadir la foto aqui???? habra que añadir el imageview al layout pokemon_detail
             ((TextView) rootView.findViewById(R.id.pokemon_detail)).setText(mItem.descripcion);
         }
 
