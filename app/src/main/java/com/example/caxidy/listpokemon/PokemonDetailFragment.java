@@ -7,6 +7,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.TextView;
 
 import com.example.caxidy.listpokemon.dummy.DummyContent;
@@ -18,6 +19,7 @@ import com.example.caxidy.listpokemon.dummy.DummyContent;
  * on handsets.
  */
 public class PokemonDetailFragment extends Fragment {
+
     /**
      * The fragment argument representing the item ID that this fragment
      * represents.
@@ -61,8 +63,8 @@ public class PokemonDetailFragment extends Fragment {
 
         // Show the dummy content as text in a TextView.
         if (mItem != null) {
-            //!!añadir la foto aqui???? habra que añadir el imageview al layout pokemon_detail
-            ((TextView) rootView.findViewById(R.id.pokemon_detail)).setText(mItem.descripcion);
+            ((TextView) rootView.findViewById(R.id.pok_detail_descripcion)).setText(mItem.descripcion);
+            ((WebView) rootView.findViewById(R.id.pok_detail_img)).loadUrl(mItem.urlimagen);
         }
 
         return rootView;
