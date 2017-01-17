@@ -1,6 +1,5 @@
 package com.example.caxidy.listpokemon.dummy;
 
-import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.util.Log;
 
@@ -26,7 +25,6 @@ public class DummyContent {
     //Variables relacionadas con la obtencion del JSON
     /////////////////////////////////////////////////////////
     private static String TAG = DummyContent.class.getSimpleName();
-    private static ProgressDialog pDialog; //!!
     //url para obtener los pokemon del json
     private static String urlJson = "http://iesayala.ddns.net/ElenaCuellar/jsonElena.php";
     ////////////////////////////////////////////////////////
@@ -82,11 +80,6 @@ public class DummyContent {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            /*!!pDialog = new ProgressDialog(????contexto, 2); //!!?¿?
-            pDialog.setMessage("Espere un momento...");
-            pDialog.setCancelable(false);
-            pDialog.show();*/
-
         }
 
         @Override
@@ -134,9 +127,6 @@ public class DummyContent {
         @Override
         protected void onPostExecute(Void result) {
             super.onPostExecute(result);
-
-            /*!!if (pDialog.isShowing())
-                pDialog.dismiss();*/
         }
     }
 }

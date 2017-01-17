@@ -1,5 +1,3 @@
-/*-pDialog...buscar alguna forma de acceder al contexto del objeto PokemonListActivity actual o quitar pDialog.
-*/
 
 package com.example.caxidy.listpokemon;
 
@@ -56,6 +54,7 @@ public class PokemonListActivity extends AppCompatActivity {
             // activity should be in two-pane mode.
             mTwoPane = true;
         }
+
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
